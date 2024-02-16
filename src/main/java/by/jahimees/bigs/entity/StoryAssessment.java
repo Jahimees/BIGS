@@ -8,7 +8,7 @@ import static by.jahimees.bigs.util.constant.DbConstant.*;
 @Data
 @Entity
 @Table(name = STORY_ASSESSMENT)
-public class StoryAssessment {
+public class StoryAssessment implements RawEntity {
 
     @Id
     @Column(name = ID_STORY_ASSESSMENT)

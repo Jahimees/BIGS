@@ -11,7 +11,7 @@ import static by.jahimees.bigs.util.constant.DbConstant.*;
 @Data
 @Entity
 @Table(name = STATUS)
-public class Status {
+public class Status implements RawEntity {
 
     @Id
     @Column(name = ID_STATUS)

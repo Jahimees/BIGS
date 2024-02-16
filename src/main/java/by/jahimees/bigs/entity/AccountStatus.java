@@ -10,7 +10,7 @@ import static by.jahimees.bigs.util.constant.DbConstant.*;
 @Data
 @Entity
 @Table(name = ACCOUNT_STATUS)
-public class AccountStatus {
+public class AccountStatus implements RawEntity {
 
     @Id
     @Column(name = ID_STATUS)

@@ -8,7 +8,7 @@ import static by.jahimees.bigs.util.constant.DbConstant.*;
 @Data
 @Entity
 @Table(name = FAVORITE)
-public class Favorite {
+public class Favorite implements RawEntity {
 
     @Id
     @Column(name = ID_FAVORITE)

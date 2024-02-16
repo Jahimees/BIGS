@@ -11,7 +11,7 @@ import static by.jahimees.bigs.util.constant.DbConstant.*;
 @Data
 @Entity
 @Table(name = ASSESSMENT_TYPE)
-public class AssessmentType {
+public class AssessmentType implements RawEntity {
 
     @Id
     @Column(name = ID_ASSESSMENT_TYPE)

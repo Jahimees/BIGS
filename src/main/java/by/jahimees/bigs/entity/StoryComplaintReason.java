@@ -11,7 +11,7 @@ import static by.jahimees.bigs.util.constant.DbConstant.*;
 @Data
 @Entity
 @Table(name = STORY_COMPLAINT_REASON)
-public class StoryComplaintReason {
+public class StoryComplaintReason implements RawEntity {
 
     @Id
     @Column(name = ID_STORY_COMPLAINT_REASON)
