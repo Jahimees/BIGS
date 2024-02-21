@@ -2,6 +2,7 @@ package by.jahimees.bigs.service;
 
 import by.jahimees.bigs.entity.Account;
 import by.jahimees.bigs.facade.entity.util.CustomPrincipal;
+import by.jahimees.bigs.service.dao.AccountDaoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -18,7 +19,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class CustomAuthenticationProvider implements AuthenticationProvider {
 
-    private final AccountService accountService;
+    private final AccountDaoService accountDaoService;
     private final BCryptPasswordEncoder passwordEncoder;
 
     @Override
@@ -26,7 +27,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         String username = authentication.getName();
         String password = authentication.getCredentials().toString();
 
-        Optional<Account> accountOptional = accountService.findByUsername(username);
+        Optional<Account> accountOptional = accountDaoService.findByUsername(username);
         if (accountOptional.isEmpty()) {
             throw new UsernameNotFoundException("User with username %s not found".formatted(username));
         }

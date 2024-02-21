@@ -1,26 +1,26 @@
-package by.jahimees.bigs.service;
+package by.jahimees.bigs.service.dao;
 
 import by.jahimees.bigs.entity.Account;
 import by.jahimees.bigs.facade.entity.AccountDto;
 import by.jahimees.bigs.repository.AccountRepository;
-import by.jahimees.bigs.service.abstraction.ComplexService;
+import by.jahimees.bigs.service.abstraction.AccountService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class AccountService implements ComplexService<Account, AccountDto> {
+public class AccountDaoService implements AccountService {
 
     private final AccountRepository accountRepository;
 
-    @Transactional
+    @Override
     public Optional<AccountDto> findDtoByUsername(String username) {
         return accountRepository.findDtoByUsername(username);
     }
 
+    @Override
     public Optional<Account> findByUsername(String username) {
         return accountRepository.findByUsername(username);
     }
