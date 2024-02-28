@@ -27,6 +27,6 @@ public class AccountDaoService implements AccountService {
 
     @Override
     public Optional<AccountDto> findDtoById(int id) {
-        return accountRepository.findDtoById(id);
+        return accountRepository.findDtoByIdAccount(id);
     }
 }

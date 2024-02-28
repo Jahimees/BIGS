@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Philosopher';
+    src: url("Philosopher-Regular.ttf");
+}
+
+body {
+    background-color: #343434;
+}
+
+input {
+    height: 50px;
+    background-color: #858585;
+    border-radius: 20px;
+    color: #EEEEEE;
+    border: none;
+    font-family: 'Philosopher';
+    font-size: 30px;
+    padding: 0 15px;
+}
+
+.p-0-30px {
+    padding: 0 30px;
+}
+
+.txt {
+    font-family: 'Philosopher';
+}
+
+.txt-menu {
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+}
+
+.menu-point {
+    background-color: #4E4E4E;
+    padding: 10px 0;
+    width: 275px;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+.h-box {
+    width: 1880px;
+    height: 110px;
+    border-radius: 20px;
+    background-color: #4E4E4E;
+    position: relative;
+    margin: 10px;
+    display: inline-flex;
+}
+
+.h-title {
+    width: 450px;
+    font-family: 'Philosopher';
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    height: fit-content;
+    margin: auto 0 auto 10px;
+    top: 0;
+    bottom: 0;
+}
+
+.h-search {
+    margin: auto auto;
+    display: inline-flex;
+}
+
+.h-profile {
+    margin: auto 30px auto 350px;
+}
+
+::placeholder {
+    color: #BEBEBE;
+}

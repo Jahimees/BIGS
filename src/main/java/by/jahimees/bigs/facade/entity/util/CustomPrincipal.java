@@ -5,9 +5,9 @@ import lombok.Getter;
 import java.io.Serial;
 import java.io.Serializable;
 
-@Getter
 public record CustomPrincipal(int id) implements Serializable {
 
+    @Getter
     @Serial
     private static final long serialVersionUID = 1L;
 
