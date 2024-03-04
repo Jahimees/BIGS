@@ -55,8 +55,9 @@ input {
     font-family: 'Philosopher';
     font-size: 30px;
     color: white;
-    margin: 10px;
-    text-align: center
+    margin: 0 10px 10px 10px;
+    text-align: center;
+    display: grid;
 }
 
 .txt-regular {
@@ -73,6 +74,8 @@ input {
     margin-top: 20px;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .menu-btn:active {
@@ -103,11 +106,14 @@ input {
 
 .inline-flex-box {
     display: inline-flex;
+}
+
+.w-100 {
     width: 100%;
 }
 
 .big-content-box {
-    width: 1250px;
+    width: -webkit-fill-available;
     background-color: #4E4E4E;
     border-radius: 20px;
     margin: 20px auto 0 auto;
@@ -115,9 +121,9 @@ input {
 }
 
 .dices-box {
-    margin: 20px 0 auto;
+    margin: 20px 0 auto 10px;
     background-color: #4E4E4E;
-    height: 220px;
+    height: fit-content;
     border-radius: 20px
 }
 

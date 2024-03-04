@@ -3,14 +3,16 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>This is the main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДТКСС</title>
     <link rel="stylesheet" type="text/css" th:href="@{styles/common.css}">
     <link rel="stylesheet" type="text/css" th:href="@{styles/header.css}">
     <link rel="stylesheet" type="text/css" th:href="@{styles/main.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{styles/media.css}">
 </head>
 <body>
 <div th:insert="~{common/header}"></div>
-<div class="inline-flex-box">
+<div class="inline-flex-box w-100">
     <div th:insert="~{common/menu_bar}"></div>
     <div class="big-content-box">
         <h2 style="margin-bottom: 30px">
@@ -20,7 +22,28 @@
             <div class="story-box">
                 <div class="story-header">
                     <h3>Название истории</h3>
-                    <div>Статистика истории</div>
+                    <div style="margin: auto 10px; color: white; font-family: Philosopher">
+                        <div class="stat-unit">
+                            <img src="/images/like_icon.svg">
+                            <div>10</div>
+                        </div>
+                        <div class="stat-unit">
+                            <img src="/images/dislike_icon.svg">
+                            <div>1</div>
+                        </div>
+                        <div class="stat-unit">
+                            <img src="/images/comment_icon.svg">
+                            <div>2</div>
+                        </div>
+                        <div class="stat-unit">
+                            <img src="/images/author_icon.svg">
+                            <div>Злодеус Злей</div>
+                        </div>
+                        <div class="stat-unit">
+                            <img style="width: 20px; background-position: center center; background-repeat: no-repeat;" src="/images/calendar_icon.svg">
+                            <div>23.02.2024 14:43</div>
+                        </div>
+                    </div>
                 </div>
                 <hr>
                 <div class="tags-box">
@@ -51,7 +74,28 @@
             <div class="story-box">
                 <div class="story-header">
                     <h3>Название истории</h3>
-                    <div>Статистика истории</div>
+                    <div style="margin: auto 10px; color: white; font-family: Philosopher">
+                        <div class="stat-unit">
+                            <img src="/images/like_icon.svg">
+                            <div>10</div>
+                        </div>
+                        <div class="stat-unit">
+                            <img src="/images/dislike_icon.svg">
+                            <div>1</div>
+                        </div>
+                        <div class="stat-unit">
+                            <img src="/images/comment_icon.svg">
+                            <div>2</div>
+                        </div>
+                        <div class="stat-unit">
+                            <img src="/images/author_icon.svg">
+                            <div>Злодеус Злей</div>
+                        </div>
+                        <div class="stat-unit">
+                            <img style="width: 20px; background-position: center center; background-repeat: no-repeat;" src="/images/calendar_icon.svg">
+                            <div>23.02.2024 14:43</div>
+                        </div>
+                    </div>
                 </div>
                 <hr>
                 <div class="tags-box">
@@ -82,7 +126,28 @@
             <div class="story-box">
                 <div class="story-header">
                     <h3>Название истории</h3>
-                    <div>Статистика истории</div>
+                    <div style="margin: auto 10px; color: white; font-family: Philosopher">
+                        <div class="stat-unit">
+                            <img src="/images/like_icon.svg">
+                            <div>10</div>
+                        </div>
+                        <div class="stat-unit">
+                            <img src="/images/dislike_icon.svg">
+                            <div>1</div>
+                        </div>
+                        <div class="stat-unit">
+                            <img src="/images/comment_icon.svg">
+                            <div>2</div>
+                        </div>
+                        <div class="stat-unit">
+                            <img src="/images/author_icon.svg">
+                            <div>Злодеус Злей</div>
+                        </div>
+                        <div class="stat-unit">
+                            <img style="width: 20px; background-position: center center; background-repeat: no-repeat;" src="/images/calendar_icon.svg">
+                            <div>23.02.2024 14:43</div>
+                        </div>
+                    </div>
                 </div>
                 <hr>
                 <div class="tags-box">

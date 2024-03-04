@@ -28,6 +28,10 @@
     margin: auto 30px auto 350px;
 }
 
+.h-profile > img {
+    width: 80px;
+}
+
 ::placeholder {
     color: #BEBEBE;
 }

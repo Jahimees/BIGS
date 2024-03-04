@@ -38,3 +38,16 @@
     font-size: 15px;
     margin-right: 5px;
 }
+
+.stat-box {
+
+}
+
+.stat-unit {
+    padding-right: 10px;
+    display: inline-flex;
+}
+
+.stat-unit > img {
+    margin-right: 5px;
+}

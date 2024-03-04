@@ -1,0 +1,32 @@
+@media (max-width: 1375px) {
+    .h-title {
+        font-size: 30px;
+        width: 350px;
+        line-height: 40px
+    }
+
+    input {
+        height: 40px;
+        font-size: 25px;
+    }
+
+    .txt-menu {
+        font-size: 25px;
+    }
+
+    .menu-btn {
+        width: 250px;
+    }
+
+    .h-profile {
+        margin: auto 20px auto 150px;
+    }
+
+    .h-profile > img {
+        width: 65px;
+    }
+
+    .dices-img {
+        width: 100px;
+    }
+}
