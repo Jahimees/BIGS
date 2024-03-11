@@ -3,6 +3,11 @@
     src: url("Philosopher-Regular.ttf");
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .no-select {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -60,6 +65,17 @@ input {
     display: grid;
 }
 
+.menu-bot-bar {
+    background-color: #4E4E4E;
+    border-radius: 20px;
+    position: fixed;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    justify-content: center;
+    display: none;
+}
+
 .txt-regular {
     font-size: 20px;
     color: white;
@@ -75,6 +91,13 @@ input {
     text-align: center;
     cursor: pointer;
     text-decoration: none;
+    color: white;
+}
+
+.menu-bot-btn {
+    padding-bottom: 10px;
+    margin: 10px auto 0 auto;
+    cursor: pointer;
     color: white;
 }
 

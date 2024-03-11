@@ -29,4 +29,63 @@
     .dices-img {
         width: 100px;
     }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .stat-unit {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .h-title {
+        font-size: 25px;
+        width: 300px;
+        text-align: left;
+        text-decoration: underline;
+        line-height: 40px;
+        margin: 10px 0 0 20px;
+    }
+
+    .p-0-30px {
+        padding: 0 20px;
+    }
+
+    .h-profile > img {
+        width: 60px;
+        position: absolute;
+        top: 20px;
+        display: inline;
+        right: 20px;
+    }
+
+    .h-box {
+        display: inline-table;
+        width: 99.5%;
+    }
+
+    .h-search {
+        display: inline-flex;
+        width: 100%;
+        margin: 20px 25px 30px 0;
+        justify-content: center;
+    }
+
+    .menu-bot-bar {
+        display: inline-flex;
+    }
+
+    .txt-menu {
+        display: none;
+    }
+
+    .dices-box {
+        display: none;
+    }
 }
