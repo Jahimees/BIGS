@@ -56,6 +56,20 @@ input {
     padding: 0 15px;
 }
 
+textarea {
+    height: 50px;
+    background-color: #858585;
+    border-radius: 20px;
+    color: #EEEEEE;
+    border: none;
+    font-family: 'Philosopher';
+    font-size: 20px;
+    padding: 0 15px;
+    width: -webkit-fill-available;
+    margin-right: 15px;
+    resize: none;
+}
+
 .txt-menu {
     font-family: 'Philosopher';
     font-size: 30px;
@@ -82,6 +96,18 @@ input {
     font-family: 'Philosopher';
 }
 
+.txt-header-2 {
+    font-family: 'Philosopher';
+    font-size: 40px;
+    color: white;
+}
+
+.txt-header-3 {
+    font-family: 'Philosopher';
+    font-size: 30px;
+    color: white;
+}
+
 .menu-btn {
     background-color: #4E4E4E;
     padding: 10px 0;
@@ -92,6 +118,17 @@ input {
     cursor: pointer;
     text-decoration: none;
     color: white;
+}
+
+.light-btn {
+    background-color: #858585;
+    border-radius: 20px;
+    color: #EEEEEE;
+    border: none;
+    font-family: 'Philosopher';
+    font-size: 25px;
+    padding: 0 15px;
+    cursor: pointer;
 }
 
 .menu-bot-btn {
@@ -157,6 +194,10 @@ input {
 
 .p-0-30px {
     padding: 0 30px;
+}
+
+.m-t-20-px {
+    margin-top: 20px;
 }
 
 .m-10-a-0-a-px {
