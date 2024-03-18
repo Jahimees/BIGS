@@ -4,12 +4,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @SpringBootApplication
+@EnableWebSecurity
+@EnableMethodSecurity
 public class BigsApplication {
 
     public static void main(String[] args) {
@@ -20,11 +24,25 @@ public class BigsApplication {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
-                .authorizeHttpRequests(auth ->
-                        auth.requestMatchers(AntPathRequestMatcher.antMatcher("/**")).permitAll()
+                .authorizeHttpRequests(auth -> {
+                            auth.requestMatchers(AntPathRequestMatcher.antMatcher("/**")).permitAll();
+                        }
                 )
                 .httpBasic(Customizer.withDefaults())
-                .formLogin(Customizer.withDefaults())
+                .formLogin(form -> {
+                    form
+                            .loginPage("/login")
+                            .defaultSuccessUrl("/main")
+                            .usernameParameter("username")
+                            .passwordParameter("password")
+                            .permitAll();
+                })
+                .logout(logout -> {
+                    logout
+                            .logoutSuccessUrl("/main")
+                            .permitAll();
+                })
+                .csrf(csrf -> csrf.disable())
                 .build();
     }
 

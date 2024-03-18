@@ -6,4 +6,6 @@ public class PageConstant {
     public static final String SEARCH = "search";
     public static final String SEND_STORY = "send_story";
     public static final String MY_STORIES = "my_stories";
+    public static final String REGISTER = "register";
+    public static final String LOGIN = "login";
 }

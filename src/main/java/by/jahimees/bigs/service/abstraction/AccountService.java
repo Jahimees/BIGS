@@ -12,4 +12,6 @@ public interface AccountService {
     Optional<Account> findByUsername(String username);
 
     Optional<AccountDto> findDtoById(int id);
+
+    AccountDto saveAccount(Account account);
 }

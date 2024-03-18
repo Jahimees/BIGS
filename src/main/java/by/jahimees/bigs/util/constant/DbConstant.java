@@ -6,6 +6,9 @@ public final class DbConstant {
     private DbConstant() {
     }
 
+    public static final int ID_ROLE_USER = 1;
+    public static final int ID_ROLE_MODERATOR = 2;
+
     //Tables
     public static final String ACCOUNT = "account";
     public static final String ACCOUNT_COMPLAINT = "account_complaint";

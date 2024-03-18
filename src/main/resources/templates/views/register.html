@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{styles/common.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{styles/media.css}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script th:src="@{script/util.js}"></script>
+</head>
+<body>
+<div>
+    <div class="middle-pos txt-header-2">Регистрация</div>
+    <a href="/main" class="middle-pos underline">На главную</a>
+    <form id="reg-form" class="middle-pos m-t-20-px">
+        <div class="txt-header-3 middle-pos">Логин</div>
+        <input style="height: auto" class="middle-pos" id="username" required>
+        <div class="txt-header-3 middle-pos">Имя</div>
+        <input style="height: auto" class="middle-pos" id="name" required>
+        <div class="txt-header-3 middle-pos">Пароль</div>
+        <input style="height: auto" class="middle-pos" id="password" type="password" required>
+        <div class="txt-header-3 middle-pos">Повторите пароль</div>
+        <input style="height: auto" class="middle-pos" id="repeat-password" type="password" required>
+        <br>
+        <input id="reg-btn" class="m-t-20-px middle-pos grey-btn" type="submit" value="Зарегистрироваться">
+        <br>
+        <a href="/login" class="middle-pos underline">Уже есть аккаунт?</a>
+    </form>
+</div>
+</body>
+</html>
+
+<script>
+    $(document).ready(() => {
+        const regBtn = $("#reg-btn");
+        const regForm = $("#reg-form");
+        regForm.unbind();
+        regForm[0].addEventListener("submit", callPreventDefault, false);
+
+        regBtn.unbind();
+        regBtn.on("click", () => {
+            console.log("Not redirected")
+            ///validation
+            // /bigs/v1/accounts
+        })
+    })
+</script>

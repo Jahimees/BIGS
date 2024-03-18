@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ДТКСС. Поиск</title>
     <link rel="stylesheet" type="text/css" th:href="@{styles/common.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{styles/header.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{styles/main.css}">
     <link rel="stylesheet" type="text/css" th:href="@{styles/media.css}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-<div th:insert="~{common/header}"></div>
 <div class="inline-flex-box w-100">
-    <div th:insert="~{common/menu_bar}"></div>
-    <div class="big-content-box">Search page</div>
-    <div class="dices-box" th:insert="~{common/right_menu}"></div>
-    <div th:insert="~{common/menu_bot_bar}"></div>
+    <div>Логин</div>
+    <input>
+    <div>Пароль</div>
+    <input>
+    <div>Авторизоваться</div>
+    <div>Забыли пароль?</div>
+    <a href="/register">Еще нет аккаунта?</a>
 </div>
 </body>
 </html>

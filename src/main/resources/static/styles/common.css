@@ -127,8 +127,9 @@ textarea {
     border: none;
     font-family: 'Philosopher';
     font-size: 25px;
-    padding: 0 15px;
+    padding: 5px 15px;
     cursor: pointer;
+    width: max-content;
 }
 
 .menu-bot-btn {
@@ -188,8 +189,14 @@ textarea {
 }
 
 .middle-pos {
+    text-align: center;
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .p-0-30px {
@@ -198,6 +205,14 @@ textarea {
 
 .m-t-20-px {
     margin-top: 20px;
+}
+
+.m-t-10-px {
+    margin-top: 10px;
+}
+
+.m-10-a-px {
+    margin: 10px auto;
 }
 
 .m-10-a-0-a-px {
